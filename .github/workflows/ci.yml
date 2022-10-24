@@ -12,6 +12,8 @@ jobs:
       NEXTAUTH_SECRET: SUPERSECRET
       NEXTAUTH_URL: http://localhost:3000
       CALENDARIFIC_API_KEY: 00e9be3d9730c3d5504e5c4794788bc428cdeea5
+      REDIS_HOST: localhost
+      REDIS_PORT: 6380
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -29,6 +31,8 @@ jobs:
       NEXTAUTH_SECRET: SUPERSECRET
       NEXTAUTH_URL: http://localhost:3000
       CALENDARIFIC_API_KEY: 00e9be3d9730c3d5504e5c4794788bc428cdeea5
+      REDIS_HOST: localhost
+      REDIS_PORT: 6380
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
