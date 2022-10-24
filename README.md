@@ -37,6 +37,10 @@ NEXTAUTH_SECRET=secret
 
 # Calendarific
 CALENDARIFIC_API_KEY=00e9be3d9730c3d5504e5c4794788bc428cdeea5
+
+# Redis
+REDIS_HOST=localhost
+REDIS_PORT=6380
 ```
 
 4. Run the following commands to deploy the app locally
@@ -72,66 +76,23 @@ Import the Postman collection via [this link](https://www.getpostman.com/collect
 
 Explanation of HTTP requests:
 
-- `signin`: sign in with username and password (public route)
-- `user/signup`: sign up with a user account (public route)
-- `user/protected`: get user data of logged in user account (user protected route)
-- `admin/signup`: sign up with an admin account (public route)
-- `admin/protected`: get user data of logged in admin account (admin protected route)
+- `activity`: get all activities in database
+- `activity/generate`: generate 1000 test activities
 
 Note:
 
 - `params` and `body` would need to be updated manually, where they are necessary.
 
-### Public role screenshots
+### Screenshots
 
-#### Sign up as user with invalid credentials
+#### Generate 1000 activities for testing
 
-![public sign up](https://i.ibb.co/8DdysTg/image.png)
+![generate test activities](https://i.ibb.co/h8D9Y8v/image.png)
 
-#### Sign in as user with invalid credentials
+#### First fetch 1000 activities
 
-![public sign in](https://i.ibb.co/WDbgSFk/image.png)
+![first fetch](https://i.ibb.co/J7g4bk8/image.png)
 
-#### Test user protected route failure
+#### Subsequent fetches
 
-![public user protected route](https://i.ibb.co/w6w7Z4r/image.png)
-
-#### Test admin protected route failure
-
-![public admin protected route](https://i.ibb.co/xXNCFx6/image.png)
-
-### User role screenshots
-
-#### Sign up as user with valid credentials
-
-![user sign up](https://i.ibb.co/GkPLNXM/image.png)
-
-#### Sign in as user with valid credentials
-
-![user sign in](https://i.ibb.co/wKHhNmc/image.png)
-
-#### Test user protected route success
-
-![user user protected route](https://i.ibb.co/y8kWwCF/image.png)
-
-#### Test admin protected route failure
-
-![user admin protected route](https://i.ibb.co/GxJJSLD/image.png)
-
-### Admin role screenshots
-
-#### Sign up as admin with valid credentials
-
-![admin sign up](https://i.ibb.co/7NmZbbz/image.png)
-
-#### Sign in as admin with valid credentials
-
-![admin sign in](https://i.ibb.co/ZfgvWfr/image.png)
-
-#### Test user protected route success
-
-![admin user protected route](https://i.ibb.co/5kxCTwQ/image.png)
-
-#### Test admin protected route success
-
-![admin admin protected route](https://i.ibb.co/NxFLJjm/image.png)
+![subsequent fetches](https://i.ibb.co/Hp9kX3M/image.png)

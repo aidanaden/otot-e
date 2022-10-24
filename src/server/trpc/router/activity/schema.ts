@@ -14,6 +14,10 @@ export const AddActivitySchema = z.object({
   }),
 });
 
+export type AddActivitySchemaType = z.infer<typeof AddActivitySchema>;
+
 export const EditActivitySchema = AddActivitySchema.extend({
   id: z.string(),
 });
+
+export type EditActivitySchemaType = z.infer<typeof EditActivitySchema>;
