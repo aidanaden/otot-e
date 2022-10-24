@@ -72,7 +72,7 @@ Visit `http://localhost:3000` to confirm successful frontend deployment
 
 ### Testing via Postman
 
-Import the Postman collection via [this link](https://www.getpostman.com/collections/e455e91c4348cd07f8fa).
+Import the Postman collection via [this link](https://www.getpostman.com/collections/d9923d273d016d416698).
 
 Explanation of HTTP requests:
 
